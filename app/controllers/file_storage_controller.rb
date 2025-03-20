@@ -1,0 +1,2 @@
+class FileStorageController < ApplicationController
+end

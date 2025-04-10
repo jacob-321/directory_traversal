@@ -15,18 +15,20 @@ class FileStorageController < ApplicationController
 
     if filename.include?("..")
       render plain: "ERROR: File path is invalid!", status: :forbidden
-    end
+      return
 
     elsif filename.start_with?("/")
       render plain: "ERROR: File path is invalid!", status: :forbidden
-    end
+      return
 
     elsif filename.include?("\\")
       render plain: "ERROR: File path is invalid!", status: :forbidden
-    end
+      return
 
     elsif filename.blank?
       render plain: "ERROR: File path is invalid!", status: :forbidden
+      return
+
     end
 
 

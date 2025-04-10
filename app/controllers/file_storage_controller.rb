@@ -10,6 +10,27 @@ class FileStorageController < ApplicationController
 
   def download
     filename = params[:file]
+
+    # Filenames with "..", "/", etc. are rejected to prevent directory traversal.
+
+    if filename.include?("..")
+      render plain: "ERROR: File path is invalid!", status: :forbidden
+    end
+
+    elsif filename.start_with?("/")
+      render plain: "ERROR: File path is invalid!", status: :forbidden
+    end
+
+    elsif filename.include?("\\")
+      render plain: "ERROR: File path is invalid!", status: :forbidden
+    end
+
+    elsif filename.blank?
+      render plain: "ERROR: File path is invalid!", status: :forbidden
+    end
+
+
+
     filepath = Rails.root.join("file_storage", filename)
 
     abspath = File.expand_path(filepath)

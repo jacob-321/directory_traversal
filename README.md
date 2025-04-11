@@ -1,3 +1,5 @@
+# SETUP: Fork the repository, run "rails db:seed", and run "rails server" in order to run the application. If you want to check the secured version of the application, be sure to switch to the "secured_website" branch.
+
 # PURPOSE: The purpose of this website is to demonstrate how attackers may perform directory traversal attacks. Look for clues like the names of the publicly displayed files on the website as well as the information within the files in order to find the name of the directory and name of the files you want to traverse to.
 
 # TUTORIAL

@@ -1,0 +1,1 @@
+REMINDER: remove diary txt file from secrets directory
